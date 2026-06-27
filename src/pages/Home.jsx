@@ -8,6 +8,7 @@ import {
   MenuImage3,
   MenuImage4,
 } from "../assets/Menu/MenuImages";
+import locationImage from "../assets/gen_0f5c0ef6ae_d28026d1aa3bb4b7.png";
 import FoodCard from "../components/FoodCard";
 import LocationCard from "../components/home/LocationCard";
 
@@ -192,7 +193,7 @@ const Home = () => {
         </div>
         <div className="relative w-full h-full flex items-center justify-center p-4">
           <img
-            src="/src/assets/gen_0f5c0ef6ae_d28026d1aa3bb4b7.png"
+            src={locationImage}
             alt="Location"
             className="w-full h-full object-cover shadow-lg rounded-2xl"
           />
