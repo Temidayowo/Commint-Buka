@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { ArrowRight, ChevronRight, MapPin } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { image1, image2, image3 } from "../assets/hero_imgs/HeroImages";
 import {
   MenuImage1,
@@ -190,7 +190,20 @@ const Home = () => {
             Phone="0808 390 2555"
           />
         </div>
-        <div></div>
+        <div className="relative w-full h-full flex items-center justify-center p-4">
+          <img
+            src="/src/assets/gen_0f5c0ef6ae_d28026d1aa3bb4b7.png"
+            alt="Location"
+            className="w-full h-full object-cover shadow-lg rounded-2xl"
+          />
+          <div className="absolute rounded-xl m-auto w-10/12 bg-white flex flex-col items-center justify-center shadow-lg px-6 py-4 gap-2">
+            <h3 className="text-lg font-bold mb-2 font-jakarta">Prefer Delivery?</h3>
+            <p className="font-jakarta text-center">Get it hot and fresh through our delivery partners.</p>
+            <button className="bg-[#fba512] text-white font-jakarta py-2 px-4 rounded-lg hover:bg-[#e5980f] w-full transition-colors cursor pointer">
+              Order on Chowdeck
+            </button>
+          </div>
+        </div>
       </section>
     </main>
   );

@@ -19,16 +19,16 @@ const FoodCard = ({ image, name, price, description, popular }) => {
       {/* Content - now a flex column that grows */}
       <div className="px-5 py-5 flex flex-col flex-1">
         <div className="flex items-start justify-between mb-2 gap-2">
-          <h3 className="font-bold text-lg text-gray-900">{name}</h3>
-          <span className="text-[#9e1212] font-bold text-lg whitespace-nowrap">₦{price}</span>
+          <h3 className="font-bold text-base text-gray-900 font-jakarta">{name}</h3>
+          <span className="text-[#9e1212] font-bold text-lg whitespace-nowrap font-jakarta">₦{price}</span>
         </div>
 
-        <p className="text-gray-500 text-sm mb-4 line-clamp-2">
+        <p className="text-gray-500 text-sm mb-4 line-clamp-2 font-jakarta">
           {description}
         </p>
 
         {/* Pushes itself to the bottom */}
-        <button className="w-full border border-gray-300 rounded-full py-2.5 font-semibold text-gray-800 hover:bg-gray-50 transition-colors cursor-pointer mt-auto">
+        <button className="w-full border border-gray-300 rounded-full py-2.5 font-semibold text-gray-800 hover:bg-gray-50 transition-colors text-sm cursor-pointer mt-auto font-jakarta">
           Add to Order
         </button>
       </div>
